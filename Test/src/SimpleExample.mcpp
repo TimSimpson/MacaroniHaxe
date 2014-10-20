@@ -1,0 +1,14 @@
+~unit SimpleExample type=exe;
+
+~import InitHaxe;
+~import HaxeExample;
+
+~block "cpp" :=
+
+
+extern "C" int main(int argc, char *argv[])
+{
+    InitHaxe init;
+
+    HaxeExample::go();
+}
